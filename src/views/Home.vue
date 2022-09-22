@@ -7,7 +7,7 @@
         The platform for find all the books :)
       </div>
 
-      <v-tabs>
+      <v-tabs class="mt-4">
         <v-tab> Search by book name </v-tab>
         <v-tab> Search by keywords in books </v-tab>
         <v-tab> Search by regex </v-tab>
