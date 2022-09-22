@@ -39,7 +39,9 @@
     <v-navigation-drawer v-model="drawer" absolute temporary>
       <v-list-item>
         <v-list-item-avatar>
-          <v-img src="https://media.glassdoor.com/sqll/1778018/paris-sorbonne-university-abu-dhabi-squarelogo-1533030782551.png"></v-img>
+          <v-img
+            src="https://media.glassdoor.com/sqll/1778018/paris-sorbonne-university-abu-dhabi-squarelogo-1533030782551.png"
+          ></v-img>
         </v-list-item-avatar>
 
         <v-list-item-content>
@@ -68,9 +70,14 @@
         </v-list-item>
       </v-list>
     </v-navigation-drawer>
-    <v-main>
+    <v-main class="mt-8">
       <router-view />
     </v-main>
+    <v-footer>
+      <v-col class="text-center" cols="12">
+        {{ new Date().getFullYear() }} — <strong>@ Sorbonne</strong>
+      </v-col>
+    </v-footer>
   </v-app>
 </template>
 
@@ -110,3 +117,9 @@ export default {
   }),
 }
 </script>
+
+<style lang="scss">
+.v-application .text-h1 {
+  font-size: 2.625rem !important;
+}
+</style>
