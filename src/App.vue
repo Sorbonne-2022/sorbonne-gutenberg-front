@@ -104,7 +104,7 @@ export default {
       {
         icon: 'mdi-github',
         title: 'This app repository',
-        href: '"https://github.com/arthurescriou/gutenberg-app"',
+        href: 'https://github.com/Sorbonne-2022/sorbonne-gutenberg-front',
       },
     ],
   }),
