@@ -1,9 +1,9 @@
 <template>
   <div style="display: flex; flex-direction: column; height: 100%">
-    <v-container style="max-width: 80%" class="pr-12 pl-12">
-      <div class="text-h1">Welcome to Sorbonne Gutenberg</div>
+    <v-container style="width: 90%" class="pr-12 pl-12 mx-a">
+      <div class="text-h1 center">Welcome to Sorbonne Gutenberg</div>
 
-      <div class="text-h5 font-weight-bold">
+      <div class="text-h6 font-weight-bold">
         The platform for find all the books :)
       </div>
 
@@ -45,7 +45,15 @@
         <div class="text-h5 font-weight-bold mb-4">French books</div>
 
         <v-row dense>
-          <v-col v-for="(item, i) in this.$store.state.books" :key="i" cols="3">
+          <v-col
+            v-for="(item, i) in this.$store.state.books"
+            :key="i"
+            xs="12"
+            sm="6"
+            md="6"
+            lg="4"
+            xl="3"
+          >
             <v-card
               :color="item.color"
               outlined
